@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D22E9DE52439678400CE4D45 /* HttpDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E9DE42439678400CE4D45 /* HttpDatas.swift */; };
+		D22E9DE724398A8C00CE4D45 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E9DE624398A8C00CE4D45 /* TabBarViewController.swift */; };
+		D22E9DE924398D0000CE4D45 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E9DE824398D0000CE4D45 /* API.swift */; };
 		D23F38FC2438C46500DEB86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F38FB2438C46500DEB86D /* AppDelegate.swift */; };
 		D23F38FE2438C46500DEB86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F38FD2438C46500DEB86D /* SceneDelegate.swift */; };
 		D23F39032438C46500DEB86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23F39012438C46500DEB86D /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		37503EEDB2C11A1DA6411F96 /* Pods_XDSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA48FBBAE10D7575557D5D /* Pods-XDSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDSwift.release.xcconfig"; path = "Target Support Files/Pods-XDSwift/Pods-XDSwift.release.xcconfig"; sourceTree = "<group>"; };
 		D22E9DE42439678400CE4D45 /* HttpDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDatas.swift; sourceTree = "<group>"; };
+		D22E9DE624398A8C00CE4D45 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D22E9DE824398D0000CE4D45 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D23F38F82438C46500DEB86D /* XDSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23F38FB2438C46500DEB86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23F38FD2438C46500DEB86D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +293,7 @@
 			children = (
 				D23F38FB2438C46500DEB86D /* AppDelegate.swift */,
 				D23F38FD2438C46500DEB86D /* SceneDelegate.swift */,
+				D22E9DE624398A8C00CE4D45 /* TabBarViewController.swift */,
 				D23F392F2438C54300DEB86D /* MainTabBarController.swift */,
 				D23F39302438C54300DEB86D /* TabBar.swift */,
 			);
@@ -311,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				D23F39352438CC5900DEB86D /* Common.swift */,
+				D22E9DE824398D0000CE4D45 /* API.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -434,9 +440,11 @@
 				D23F39312438C54400DEB86D /* MainTabBarController.swift in Sources */,
 				D23F392C2438C4E100DEB86D /* PublishViewController.swift in Sources */,
 				D23F392D2438C4E100DEB86D /* MineViewController.swift in Sources */,
+				D22E9DE724398A8C00CE4D45 /* TabBarViewController.swift in Sources */,
 				D23F38FC2438C46500DEB86D /* AppDelegate.swift in Sources */,
 				D23F392E2438C4E100DEB86D /* DiscoverViewController.swift in Sources */,
 				D23F392A2438C4E100DEB86D /* FeaturedViewController.swift in Sources */,
+				D22E9DE924398D0000CE4D45 /* API.swift in Sources */,
 				D22E9DE52439678400CE4D45 /* HttpDatas.swift in Sources */,
 				D23F38FE2438C46500DEB86D /* SceneDelegate.swift in Sources */,
 				D23F39362438CC5900DEB86D /* Common.swift in Sources */,

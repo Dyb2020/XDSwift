@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import KakaJSON
 
 class DiscoverViewController: UIViewController {
 
@@ -17,9 +19,11 @@ class DiscoverViewController: UIViewController {
         
         self.view.backgroundColor = RGBColor(r:34,g:54,b:34);
         
-        let dict = ["token" : "f2e0c88f-7d32-3464-9cc5"]
-        HttpDatas.shareInstance.requestDatas(.get, URLString: "https://apis.jiao-yuan.com/api/202/travel_diary_v2.php/member_unreadmsg_cnt_v2", paramaters: dict, finishCallBack: { (respon) in
-            print("respon -- :", respon)
+        let dict = ["page" : "1"]
+        HttpDatas.shareInstance.requestDatas(.get, URLString: API.imgrank, paramaters: dict, finishCallBack: { response in
+            let jsons = JSON(response)["items"].arrayObject
+            
+            print("respon -- :", jsons as Any)
         }) { (error) in
             print("error -- :", error)
         }

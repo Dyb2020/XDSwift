@@ -6,4 +6,16 @@
 //  Copyright © 2020 XiaoDing. All rights reserved.
 //
 
-import Foundation
+struct API {
+    static let baseUrl = "http://m2.qiushibaike.com/"
+    
+    // 列表
+    static let imgrank = url(path: "article/list/imgrank")
+    
+    
+    
+    
+    static func url(path: String) ->String {
+        return baseUrl + path
+    }
+}

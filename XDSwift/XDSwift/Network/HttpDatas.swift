@@ -34,17 +34,11 @@ extension HttpDatas {
      */
     func requestDatas (_ type:  MethodType, URLString: String, paramaters: [String: Any]?, finishCallBack: @escaping (_ respone : Any) -> (), failreCallBlock: @escaping (_ error: Error) -> ()) {
         
-        func baseUrl(url: String) -> String {
-            return "http://www.baidu.com/" + url
-        }
-        let urlString = baseUrl(url: URLString)
-        print(urlString);
-        
         // 获取请求类型
         let method = (type == .get ? HTTPMethod.get : HTTPMethod.post)
         
         // 发送网络请求
-        Alamofire.request(urlString, method: method, parameters: paramaters, encoding: URLEncoding.default, headers: nil).responseJSON { responseJson in
+        Alamofire.request(URLString, method: method, parameters: paramaters, encoding: URLEncoding.default, headers: nil).responseJSON { responseJson in
             
             // 判断是否请求成功
             guard responseJson.result.value != nil else {
