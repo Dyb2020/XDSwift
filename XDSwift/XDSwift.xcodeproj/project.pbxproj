@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22E9DE52439678400CE4D45 /* HttpDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E9DE42439678400CE4D45 /* HttpDatas.swift */; };
 		D23F38FC2438C46500DEB86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F38FB2438C46500DEB86D /* AppDelegate.swift */; };
 		D23F38FE2438C46500DEB86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F38FD2438C46500DEB86D /* SceneDelegate.swift */; };
 		D23F39032438C46500DEB86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23F39012438C46500DEB86D /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		37503EEDB2C11A1DA6411F96 /* Pods_XDSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA48FBBAE10D7575557D5D /* Pods-XDSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDSwift.release.xcconfig"; path = "Target Support Files/Pods-XDSwift/Pods-XDSwift.release.xcconfig"; sourceTree = "<group>"; };
+		D22E9DE42439678400CE4D45 /* HttpDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDatas.swift; sourceTree = "<group>"; };
 		D23F38F82438C46500DEB86D /* XDSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23F38FB2438C46500DEB86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23F38FD2438C46500DEB86D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +64,6 @@
 				F628A95B0E9E568F10CE80DB /* Pods-XDSwift.debug.xcconfig */,
 				74DA48FBBAE10D7575557D5D /* Pods-XDSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -72,6 +73,14 @@
 				37503EEDB2C11A1DA6411F96 /* Pods_XDSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D22E9DE32439675000CE4D45 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D22E9DE42439678400CE4D45 /* HttpDatas.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D23F38EF2438C46500DEB86D = {
@@ -95,6 +104,7 @@
 		D23F38FA2438C46500DEB86D /* XDSwift */ = {
 			isa = PBXGroup;
 			children = (
+				D22E9DE32439675000CE4D45 /* Network */,
 				D23F39342438CC4500DEB86D /* Common */,
 				D23F39292438C4E100DEB86D /* Main */,
 				D23F39332438CC2400DEB86D /* Modules */,
@@ -427,6 +437,7 @@
 				D23F38FC2438C46500DEB86D /* AppDelegate.swift in Sources */,
 				D23F392E2438C4E100DEB86D /* DiscoverViewController.swift in Sources */,
 				D23F392A2438C4E100DEB86D /* FeaturedViewController.swift in Sources */,
+				D22E9DE52439678400CE4D45 /* HttpDatas.swift in Sources */,
 				D23F38FE2438C46500DEB86D /* SceneDelegate.swift in Sources */,
 				D23F39362438CC5900DEB86D /* Common.swift in Sources */,
 				D23F39322438C54400DEB86D /* TabBar.swift in Sources */,

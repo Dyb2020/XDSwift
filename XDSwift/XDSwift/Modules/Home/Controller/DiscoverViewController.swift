@@ -16,18 +16,12 @@ class DiscoverViewController: UIViewController {
         self.title = "发现"
         
         self.view.backgroundColor = RGBColor(r:34,g:54,b:34);
-        // Do any additional setup after loading the view.
+        
+        let dict = ["token" : "f2e0c88f-7d32-3464-9cc5"]
+        HttpDatas.shareInstance.requestDatas(.get, URLString: "https://apis.jiao-yuan.com/api/202/travel_diary_v2.php/member_unreadmsg_cnt_v2", paramaters: dict, finishCallBack: { (respon) in
+            print("respon -- :", respon)
+        }) { (error) in
+            print("error -- :", error)
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
