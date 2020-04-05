@@ -13,7 +13,7 @@ class PublishViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "发布"
+        self.navigationController?.title = "发布"
         view.backgroundColor = UIColor.green;
     }
     

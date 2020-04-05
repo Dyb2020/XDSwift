@@ -24,7 +24,7 @@ class MainTabBarController: UITabBarController {
     
     func addChild(title: String, image: String, selectedImage: String, type: UIViewController.Type) {
         let nav = UINavigationController(rootViewController: type.init())
-        nav.title = title;
+        nav.tabBarItem.title = title;
         nav.tabBarItem.image = UIImage(named: image);
         nav.tabBarItem.selectedImage = UIImage(named: selectedImage);
         
